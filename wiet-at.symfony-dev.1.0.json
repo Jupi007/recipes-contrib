@@ -1,0 +1,36 @@
+{
+    "locks": {
+        "wiet-at/symfony-dev": {
+            "version": "1.0",
+            "recipe": {
+                "repo": "1.0",
+                "branch": "master",
+                "version": "1.0",
+                "ref": "5f0a1f43e47f0caddd94c950daa2407f841444c8"
+            }
+        }
+    },
+    "manifests": {
+        "wiet-at/symfony-dev": {
+            "repository": "github.com/symfony/recipes-contrib",
+            "package": "wiet-at/symfony-dev",
+            "version": "1.0",
+            "manifest": {
+                "env": {
+                    "COMPOSE_PROJECT_NAME": "my-project",
+                    "PROJECT_LOCAL_IP": "127.1.2.3"
+                },
+                "copy-from-package": {
+                    "dist/docker-compose.yaml": "docker-compose.yaml",
+                    "dist/symfony-dev-cli-proxy": "%BIN_DIR%/dev-cli"
+                },
+                "post-install-output": [
+                    "wiet-at/symfony-dev: Please check your .env file and adapt it according to your needs."
+                ]
+            },
+            "files": [],
+            "origin": "wiet-at/symfony-dev:1.0@github.com/symfony/recipes-contrib:master",
+            "is_contrib": true
+        }
+    }
+}

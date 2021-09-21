@@ -1,0 +1,13 @@
+{
+    "aliases": [],
+    "recipes": {
+        "wiet-at/symfony-dev": [
+            "1.0"
+        ]
+    },
+    "versions": [],
+    "git_url": "https://github.com/symfony/recipes-contrib.git",
+    "tree_template": "https://github.com/symfony/recipes-contrib/tree/{tree}/{package}/{version}",
+    "recipe_template": "https://api.github.com/repos/symfony/recipes-contrib/contents/{package_dotted}.{version}.json?ref=flex/pull-1284",
+    "is_contrib": true
+}
